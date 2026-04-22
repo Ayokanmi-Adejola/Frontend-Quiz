@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# Frontend Quiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend Quiz is a responsive single-page application that tests core frontend knowledge across HTML, CSS, JavaScript, and Accessibility. The project emphasizes clean UI design, accessible interactions, and a smooth user flow from quiz selection to results.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://ayokanmi-adejola.github.io/Frontend-Quiz/
 
-## React Compiler
+## Key Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Multi-subject quiz experience with curated question sets.
+- Step-by-step question flow with progress indication.
+- Immediate visual feedback for correct and incorrect answers.
+- Final results summary with replay support.
+- Light and dark theme switching.
+- Mobile-first, responsive layout for a consistent cross-device experience.
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19
+- TypeScript
+- Vite
+- Chakra UI 3
+- next-themes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js 20+
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/Ayokanmi-Adejola/Frontend-Quiz.git
+cd Frontend-Quiz
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Run in Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| npm run dev | Start the local development server. |
+| npm run build | Run TypeScript checks and create a production build. |
+| npm run preview | Preview the production build locally. |
+| npm run lint | Run ESLint checks across the project. |
+
+## Deployment
+
+This repository is configured for GitHub Pages deployment through GitHub Actions.
+
+- Production assets are generated in `dist`.
+- Vite is configured with the correct repository base path.
+- Workflow configuration is located at `.github/workflows/deploy.yml`.
+
+## Project Structure
+
+```text
+src/
+  components/   # Reusable UI and page-level components
+  data/         # Quiz data and subject content
+  hooks/        # Shared React hooks
+  theme.ts      # Chakra UI system configuration
+```
+
+## Acknowledgement
+
+This project was inspired by a Frontend Mentor challenge.
