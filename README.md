@@ -69,7 +69,3 @@ src/
   hooks/        # Shared React hooks
   theme.ts      # Chakra UI system configuration
 ```
-
-## Acknowledgement
-
-This project was inspired by a Frontend Mentor challenge.
