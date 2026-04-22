@@ -2,9 +2,8 @@
 
 Frontend Quiz is a responsive single-page application that tests core frontend knowledge across HTML, CSS, JavaScript, and Accessibility. The project emphasizes clean UI design, accessible interactions, and a smooth user flow from quiz selection to results.
 
-## Live Demo
+<img width="700" height="513" alt="image" src="https://github.com/user-attachments/assets/23ecb60a-7e6b-4aeb-ba15-07d197806c51" />
 
-https://ayokanmi-adejola.github.io/Frontend-Quiz/
 
 ## Key Highlights
 
